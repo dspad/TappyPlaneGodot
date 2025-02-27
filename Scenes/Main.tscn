@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://clmg0euoijgm0"]
+[gd_scene load_steps=4 format=3 uid="uid://clmg0euoijgm0"]
 
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_tnfms"]
 [ext_resource type="Texture2D" uid="uid://devl5h4m5ffiw" path="res://Assets/Background.png" id="1_u0ct4"]
 [ext_resource type="Script" path="res://Scripts/background.gd" id="1_y0evw"]
 
 [node name="Main" type="Node"]
+script = ExtResource("1_tnfms")
 
-[node name="Background" type="Node2D" parent="."]
+[node name="Background" type="Node2D" parent="." groups=["DynamicObject"]]
 scale = Vector2(2, 2)
 script = ExtResource("1_y0evw")
 
